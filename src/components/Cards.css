@@ -1,0 +1,19 @@
+.container {
+    background-color: #212429;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    transition: all 500ms;
+}
+
+#switch:checked ~ * .container {
+  background-color: #e5e8ed;
+}
+
+@media screen and (min-width: 960px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

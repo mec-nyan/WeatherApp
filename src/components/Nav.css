@@ -1,0 +1,30 @@
+.topNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1c1f24;
+  color: white;
+  border-bottom: 1px solid #5d536c;
+  transition: all 500ms;
+}
+
+.link {
+  color: #53536c;
+  font-size: 1.2em;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #6F7C91;
+}
+
+
+#switch:checked ~ * .home {
+  background-color: #dbdee3;
+}
+

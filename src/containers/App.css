@@ -1,0 +1,9 @@
+.big {
+    background-color: #212429;
+    height: 100vh;
+    transition: all 500ms;
+}
+
+#switch:checked ~ * .big {
+  background-color: #e5e8ed;
+}
