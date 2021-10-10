@@ -9,7 +9,7 @@ function Nav({onSearch}) {
     <nav className='topNav'>
       <div className='home'>
         <NavLink activeClassName='active' className='link' to='/'>
-          <span>HenryWeather</span>
+          <span>Home</span>
         </NavLink>
         <NavLink activeClassName='active' className='link' to='/about'>
           <span>About</span>
