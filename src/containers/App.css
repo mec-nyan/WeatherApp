@@ -1,7 +1,8 @@
 .big {
     background-color: #212429;
-    height: 100vh;
+    min-height: 100vh;
     transition: all 500ms;
+    overflow: hidden;
 }
 
 #switch:checked ~ * .big {

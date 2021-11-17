@@ -3,10 +3,10 @@ import './SearchBar.css';
 
 export default function SearchBar({onSearch}) {
   const [city, setCity] = useState("");
-  const [mode, setMode] = useState('ON');
+  const [mode, setMode] = useState('OFF');
 
   function switchMode() {
-    setMode(mode === 'ON' ? 'OFF' : 'ON');
+    setMode(mode === 'OFF' ? 'ON' : 'OFF');
     console.log('Mode is: ', mode);
   }
 
@@ -26,7 +26,7 @@ export default function SearchBar({onSearch}) {
         <span className='mode'>nigth mode: {mode}</span>
       </div>
 
-      <div>
+      <div className="inputs">
         <input
           className="field"
           type="text"
