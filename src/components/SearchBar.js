@@ -17,20 +17,25 @@ export default function SearchBar({onSearch}) {
       onSearch(city);
       setCity("");
     }}>
-      <label htmlFor="switch">
-        <span className="toggle" onClick={switchMode}>
-          <span className="circle"></span>
-        </span>
-      </label>
-      <span className='mode'>nigth mode: {mode}</span>
-      <input className="search" type="submit" value="Buscar" />
-      <input
-        className="field"
-        type="text"
-        placeholder="Ciudad..."
-        value={city}
-        onChange={e => setCity(e.target.value)}
-      />
+      <div className="daynight">
+        <label htmlFor="switch">
+          <span className="toggle" onClick={switchMode}>
+            <span className="circle"></span>
+          </span>
+        </label>
+        <span className='mode'>nigth mode: {mode}</span>
+      </div>
+
+      <div>
+        <input
+          className="field"
+          type="text"
+          placeholder="Ciudad..."
+          value={city}
+          onChange={e => setCity(e.target.value)}
+        />
+        <input className="search" type="submit" value="Buscar" />
+      </div>
     </form>
   );
 }

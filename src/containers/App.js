@@ -7,8 +7,7 @@ import Cards from '../components/Cards.js';
 import About from '../components/About.js';
 import Ciudad from '../components/Ciudad.js';
 
-const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
-const myKey = "6359f6589f21c2f3b4da8e6bdfb08f30";
+import { apiKey, myKey } from './env';
 
 function App() {
   const [ cities, setCities ] = useState([]);
