@@ -12,4 +12,4 @@ But what could it be?  Well, my friend, you're about to find out!
 
 <hr />
 
-BTW you can see the deployed app here:
+BTW you can see the deployed app here: https://whatever-the-weather-e0062.web.app
